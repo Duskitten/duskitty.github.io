@@ -1,5 +1,40 @@
 body {margin: 0; font-family: "Lato", sans-serif;}
 
+div.container{
+	overflow:auto;
+	position: relative;
+	top: 50px;
+	width: 1024px;
+	height: 512px;
+	display: block;
+	margin: auto auto;
+	float: initial;
+	background-color: transparent;
+  	border: 20px solid transparent;
+  	border-image-source: url(../images/Backplate_Title.png);
+  	border-image-slice: 20% fill; /* number is set without units. If the image used is a raster image, it will be considered a pixel value */
+
+}
+
+div.containerGames{
+	float: left;
+	width: 512px;
+	display: inline;
+    position: relative;
+    margin: 0px auto;
+    background-color: transparent;
+
+}
+div.containerArt{
+	float: left;
+	position: relative;
+	display: inline;
+	width: 512px;
+	left: 0px;
+	margin: 0px auto;
+	background-color: transparent;
+
+}
 ul.topnav {
   list-style-type: none;
   margin: 0;
@@ -30,7 +65,25 @@ ul.topnav li a.active {background-color: #4CAF50;}
 ul.topnav li.right {float: right;}
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1024px) {
   ul.topnav li.right, 
   ul.topnav li {float: none;}
+  div.containerArt {float: none;}
+  div.containerGames {float: none;}
+  div.container{
+  	margin-left: 50px;
+  	margin-right: 50px;
+	width: auto;
+	height: auto;}
+	ul.topnav li a {
+	  display: block;
+	  color: white;
+	  text-align: center;
+	  padding: 11px 30px;
+	  text-decoration: none;
+	}
+	ul.topnav li a.topimg {
+	  display: block;
+	  padding: 18px 10px;
+	}
 }
