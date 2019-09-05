@@ -1,10 +1,10 @@
 body {margin: 0; font-family: "Lato", sans-serif;}
 
-div.container{
+div.Centercontainer{
 	overflow:auto;
 	position: relative;
 	top: 50px;
-	width: 1024px;
+	width: 512px;
 	height: 512px;
 	display: block;
 	margin: auto auto;
@@ -12,27 +12,58 @@ div.container{
 	background-color: transparent;
   	border: 20px solid transparent;
   	border-image-source: url(../images/Backplate_Title.png);
-  	border-image-slice: 20% fill; /* number is set without units. If the image used is a raster image, it will be considered a pixel value */
+  	border-image-slice: 20% fill;
 
 }
 
 div.containerGames{
+	position: relative;
+	margin-left: 0px;
+  	margin-right: calc(256px-50px);
+	width: 210px;
+	height: 210px;
+	display: block;
 	float: left;
-	width: 512px;
-	display: inline;
-    position: relative;
-    margin: 0px auto;
-    background-color: transparent;
+	background-color: transparent;
+    border: 20px solid transparent;
+  	border-image-source: url(../images/Title_Division_Plate.png);
+  	border-image-slice: 20% fill;
 
 }
 div.containerArt{
-	float: left;
 	position: relative;
-	display: inline;
-	width: 512px;
-	left: 0px;
-	margin: 0px auto;
+	margin-left: 0px;
+  	margin-right: calc(256px-50px);
+	width: 210px;
+	height: 210px;
+	display: block;
+	float: right;
 	background-color: transparent;
+	border: 20px solid transparent;
+  	border-image-source: url(../images/Title_Division_Plate.png);
+  	border-image-slice: 20% fill;
+}
+div.containerUpdates{
+	width: calc(50% - 40px);
+	float: left;
+	height: 300px;
+    position: relative;
+    background-color: transparent;
+    border: 20px solid transparent;
+  	border-image-source: url(../images/Title_Division_Plate.png);
+  	border-image-slice: 20% fill;
+
+}
+div.containerSocial{
+	float: left;
+	width: 200px;
+	height: 300px;
+	margin-left: 5px;
+    position: relative;
+    background-color: transparent;
+    border: 20px solid transparent;
+  	border-image-source: url(../images/Title_Division_Plate.png);
+  	border-image-slice: 20% fill;
 
 }
 ul.topnav {
@@ -65,24 +96,29 @@ ul.topnav li a.active {background-color: #4CAF50;}
 ul.topnav li.right {float: right;}
 
 
-@media screen and (max-width: 1024px) {
-  ul.topnav li.right, 
-  ul.topnav li {float: none;}
-  div.containerArt {float: none;}
-  div.containerGames {float: none;}
-  div.container{
-  	margin-left: 50px;
-  	margin-right: 50px;
-	width: auto;
-	height: auto;}
-	ul.topnav li a {
+@media screen and (max-width: 720px) {
+   ul.topnav li.right, 
+   ul.topnav li {float: none;}
+   div.containerGames{
+   	  float: none;
+	  width: calc(100% - 40px);}
+   div.containerArt{
+      float: none;
+	  width: calc(100% - 40px);}
+   div.Centercontainer{
+      float: none;
+  	  margin-left: 50px;
+  	  margin-right: 50px;
+	  width: auto;
+	  height: auto;}
+   ul.topnav li a {
 	  display: block;
 	  color: white;
 	  text-align: center;
 	  padding: 11px 30px;
 	  text-decoration: none;
 	}
-	ul.topnav li a.topimg {
+   ul.topnav li a.topimg {
 	  display: block;
 	  padding: 18px 10px;
 	}
