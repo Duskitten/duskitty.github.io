@@ -15,6 +15,18 @@ div.Centercontainer{
   	border-image-slice: 20% fill;
 
 }
+div.TileTitle{
+	position: relative;
+	margin: auto auto;
+	float:initial;
+	background-color: transparent;
+
+}
+
+img.Gameimg{
+	margin-top: 2px;
+	margin-left: 1px;
+}
 
 div.containerGames{
 	position: relative;
@@ -109,6 +121,9 @@ ul.topnav li.right {float: right;}
       float: none;
   	  margin-left: 50px;
   	  margin-right: 50px;
+	  width: auto;
+	  height: auto;}
+	 div.TileTitle{
 	  width: auto;
 	  height: auto;}
    ul.topnav li a {
