@@ -1,7 +1,7 @@
 body {margin: 0; font-family: "Lato", sans-serif;}
 
 div.Centercontainer{
-	overflow:auto;
+	overflow:hidden;
 	position: relative;
 	top: 50px;
 	width: 512px;
@@ -36,10 +36,25 @@ div.containerGames{
 	height: 210px;
 	display: block;
 	float: left;
+	top:5px;
 	background-color: transparent;
     border: 20px solid transparent;
   	border-image-source: url(../images/Title_Division_Plate.png);
   	border-image-slice: 20% fill;
+
+}
+div.containerRecentUpdate{
+	position: relative;
+	margin-left: 0px;
+	width: calc(100%- 40px);
+	height: 100px;
+	display: block;
+	float: none;
+	background-color: transparent;
+    border: 20px solid transparent;
+  	border-image-source: url(../images/Title_Division_Plate.png);
+  	border-image-slice: 20% fill;
+
 
 }
 div.containerArt{
@@ -50,33 +65,11 @@ div.containerArt{
 	height: 210px;
 	display: block;
 	float: right;
+	top:5px;
 	background-color: transparent;
 	border: 20px solid transparent;
   	border-image-source: url(../images/Title_Division_Plate.png);
   	border-image-slice: 20% fill;
-}
-div.containerUpdates{
-	width: calc(50% - 40px);
-	float: left;
-	height: 300px;
-    position: relative;
-    background-color: transparent;
-    border: 20px solid transparent;
-  	border-image-source: url(../images/Title_Division_Plate.png);
-  	border-image-slice: 20% fill;
-
-}
-div.containerSocial{
-	float: left;
-	width: 200px;
-	height: 300px;
-	margin-left: 5px;
-    position: relative;
-    background-color: transparent;
-    border: 20px solid transparent;
-  	border-image-source: url(../images/Title_Division_Plate.png);
-  	border-image-slice: 20% fill;
-
 }
 ul.topnav {
   list-style-type: none;
@@ -117,15 +110,16 @@ ul.topnav li.right {float: right;}
    div.containerArt{
       float: none;
 	  width: calc(100% - 40px);}
-   div.Centercontainer{
+   div.containerRecentUpdates{
       float: none;
-  	  margin-left: 50px;
-  	  margin-right: 50px;
-	  width: auto;
+	  width: calc(100% - 40px);}
+   div.Centercontainer{
+	  width: 252px;
 	  height: auto;}
 	 div.TileTitle{
 	  width: auto;
-	  height: auto;}
+	  height: auto;
+	  margin-left: -2px;}
    ul.topnav li a {
 	  display: block;
 	  color: white;
