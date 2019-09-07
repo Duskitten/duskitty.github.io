@@ -95,12 +95,14 @@ ul.topnav li a {
   display: block;
   color: white;
   text-align: center;
-  padding: 31px 30px;
+  padding: 35px 30px;
+  padding-bottom: 34px;
   text-decoration: none;
 }
 ul.topnav li a.topimg {
   display: block;
   padding: 18px 10px;
+  padding-top: 25px;
 }
 ul.topnav li a:hover:not(.active) {background-color: #111;}
 
