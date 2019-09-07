@@ -1,18 +1,20 @@
+@import url("gametitle.css");
+
 body {margin: 0; font-family: "Lato", sans-serif;}
 
 div.Centercontainer{
 	overflow:hidden;
 	position: relative;
 	top: 50px;
-	width: 512px;
-	height: 512px;
+	width: 900px;
+	height: 600px;
 	display: block;
 	margin: auto auto;
 	float: initial;
 	background-color: transparent;
-  	border: 20px solid transparent;
+  	border: 35px solid transparent;
   	border-image-source: url(../images/Backplate_Title.png);
-  	border-image-slice: 20% fill;
+  	border-image-slice: 35% fill;
 
 }
 div.TileTitle{
@@ -23,17 +25,13 @@ div.TileTitle{
 
 }
 
-img.Gameimg{
-	margin-top: 2px;
-	margin-left: 1px;
-}
-
 div.containerGames{
+	overflow:hidden;
 	position: relative;
 	margin-left: 0px;
   	margin-right: calc(256px-50px);
-	width: 210px;
-	height: 210px;
+	width: 407px;
+	height: 245px;
 	display: block;
 	float: left;
 	top:5px;
@@ -43,6 +41,9 @@ div.containerGames{
   	border-image-slice: 20% fill;
 
 }
+
+
+
 div.containerRecentUpdate{
 	position: relative;
 	margin-left: 0px;
@@ -58,11 +59,12 @@ div.containerRecentUpdate{
 
 }
 div.containerArt{
+	overflow:hidden;
 	position: relative;
 	margin-left: 0px;
   	margin-right: calc(256px-50px);
-	width: 210px;
-	height: 210px;
+	width: 407px;
+	height: 245px;
 	display: block;
 	float: right;
 	top:5px;
@@ -101,21 +103,28 @@ ul.topnav li a.active {background-color: #4CAF50;}
 ul.topnav li.right {float: right;}
 
 
-@media screen and (max-width: 720px) {
-   ul.topnav li.right, 
+@media screen and (max-width: 987px) {
+   ul.topnav li.right,
    ul.topnav li {float: none;}
    div.containerGames{
+		 overflow:visible;
    	  float: none;
-	  width: calc(100% - 40px);}
+	  width: calc(100% - 40px);
+	height: auto;}
    div.containerArt{
+		 overflow:visible;
       float: none;
-	  width: calc(100% - 40px);}
+	  width: calc(100% - 40px);
+	height: auto;}
+
    div.containerRecentUpdates{
       float: none;
 	  width: calc(100% - 40px);}
    div.Centercontainer{
+		 overflow:visible;
 	  width: 252px;
 	  height: auto;}
+		@import url("gametitle.css");
 	 div.TileTitle{
 	  width: auto;
 	  height: auto;
