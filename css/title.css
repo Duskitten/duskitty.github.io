@@ -1,6 +1,12 @@
 @import url("gametitle.css");
 
-body {margin: 0; font-family: "Lato", sans-serif;}
+body {margin: 0; font-family: "Lato", sans-serif;
+image-rendering: optimizeSpeed;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: optimize-contrast;
+    image-rendering: pixelated;
+    -ms-interpolation-mode: nearest-neighbor;}
 
 div.Centercontainer{
 	overflow:hidden;
@@ -14,7 +20,7 @@ div.Centercontainer{
 	background-color: transparent;
   	border: 35px solid transparent;
   	border-image-source: url(../images/Backplate_Title.png);
-  	border-image-slice: 35% fill;
+  	border-image-slice: 20% fill;
 
 }
 div.TileTitle{
@@ -37,8 +43,8 @@ div.containerGames{
 	top:5px;
 	background-color: transparent;
     border: 20px solid transparent;
-  	border-image-source: url(../images/Title_Division_Plate.png);
-  	border-image-slice: 20% fill;
+	background-image: url(../images/Backplate_Opt.png);
+	background-position: -20px -20px;
 
 }
 
@@ -53,8 +59,8 @@ div.containerRecentUpdate{
 	float: none;
 	background-color: transparent;
     border: 20px solid transparent;
-  	border-image-source: url(../images/Title_Division_Plate.png);
-  	border-image-slice: 20% fill;
+		background-image: url(../images/Backplate_Opt_Top_1.png);
+		background-position: -20px -20px;
 
 
 }
@@ -70,8 +76,8 @@ div.containerArt{
 	top:5px;
 	background-color: transparent;
 	border: 20px solid transparent;
-  	border-image-source: url(../images/Title_Division_Plate.png);
-  	border-image-slice: 20% fill;
+		background-image: url(../images/Backplate_Opt.png);
+		background-position: -20px -20px;
 }
 ul.topnav {
   list-style-type: none;
@@ -110,16 +116,20 @@ ul.topnav li.right {float: right;}
 		 overflow:visible;
    	  float: none;
 	  width: calc(100% - 40px);
-	height: auto;}
+	height: auto;
+	background-image: url(../images/Backplate_Opt_Small.png);}
    div.containerArt{
 		 overflow:visible;
       float: none;
 	  width: calc(100% - 40px);
-	height: auto;}
+	height: auto;
+	top:10px;
+	background-image: url(../images/Backplate_Opt_Small.png);}
 
-   div.containerRecentUpdates{
+   div.containerRecentUpdate{
       float: none;
-	  width: calc(100% - 40px);}
+	  width: calc(100% - 40px);
+		background-image: url(../images/Backplate_Opt_Top_2.png);}
    div.Centercontainer{
 		 overflow:visible;
 	  width: 252px;
