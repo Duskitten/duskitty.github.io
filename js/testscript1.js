@@ -30,7 +30,7 @@ function checkCookie() {
      user = "Base";
      if (user != "" && user != null) {
        console.log("loaded!")
-       setCookie("theme", user, 30);
+       setCookie("theme", user, 24000000);
        loadjscssfile("css/"+user+"_Theme.css","css");
      }
   }

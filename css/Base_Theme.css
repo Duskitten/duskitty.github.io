@@ -17,6 +17,8 @@ img.TopBanner{
 	display: block;
 	margin: auto auto;
 	float: none;
+  content: url("../images/TwitterBanner.png");
+
 }
 
 ul.topnav {
