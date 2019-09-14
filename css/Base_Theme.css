@@ -4,9 +4,12 @@ image-rendering: optimizeSpeed;
     image-rendering: -webkit-optimize-contrast;
     image-rendering: optimize-contrast;
     image-rendering: pixelated;
-    -ms-interpolation-mode: nearest-neighbor;}
+    -ms-interpolation-mode: nearest-neighbor;
+  background-color: rgb(21, 32, 43);}
 
-
+div.Banner{
+  background: #FFF;
+}
 
 img.TopBanner{
 	overflow:hidden;
@@ -25,7 +28,7 @@ ul.topnav {
 }
 
 div.TopNavContainer {
-background-color: #CCC;
+background-color: rgb(28, 57, 77);
 }
 
 
