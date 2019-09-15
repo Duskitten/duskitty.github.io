@@ -37,6 +37,7 @@ img.Char{
   top:186px;
 	margin: auto auto;
 	float: none;
+  content: url("../images/A_RoomChar.gif");
 }
 
 div.TopNavContainer {

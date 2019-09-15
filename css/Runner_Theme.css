@@ -21,6 +21,17 @@ img.TopBanner{
 
 }
 
+img.Char{
+	overflow:hidden;
+  position: absolute;
+	display: block;
+  left:calc(50% - 120px);
+  top:188px;
+	margin: auto auto;
+	float: none;
+  content: url("../images/RunnerChar.gif");
+}
+
 ul.topnav {
   list-style-type: none;
   margin: 0;
