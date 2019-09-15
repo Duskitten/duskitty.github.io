@@ -21,12 +21,23 @@ img.TopBanner{
 
 }
 
+img.Char{
+  visibility: hidden;
+	overflow:hidden;
+  position: absolute;
+	display: block;
+  left:calc(50% - 120px);
+  top:186px;
+	margin: auto auto;
+	float: none;
+}
+
 ul.topnav {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  margin-left:calc(50% - 220px);
+  margin-left:calc(50% - 275px);
 }
 
 div.TopNavContainer {
