@@ -1,0 +1,59 @@
+body {margin: 0; font-family: "Lato", sans-serif;
+image-rendering: optimizeSpeed;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: optimize-contrast;
+    image-rendering: pixelated;
+    -ms-interpolation-mode: nearest-neighbor;
+  background-color: #1f2029;}
+
+div.Banner{
+  background: #2b2e4a;
+}
+
+img.TopBanner{
+	overflow:hidden;
+	position: relative;
+	display: block;
+	margin: auto auto;
+	float: none;
+  content: url("../images/RunnerBanner.png");
+
+}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  margin-left:calc(50% - 220px);
+}
+
+div.TopNavContainer {
+background-color: #272837;
+}
+
+
+ul.topnav li {
+	float: left;
+}
+
+ul.topnav li a {
+  display: block;
+  color: #903749;
+  font-weight:bold;
+  text-align: center;
+  padding: 15px 30px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #2b2e4a;}
+
+ul.topnav li a.active {background-color: #2b2e4a;}
+
+ul.topnav li.right {float: right;}
+
+
+@media screen and (max-width: 987px) {
+
+}
