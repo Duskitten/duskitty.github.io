@@ -27,7 +27,7 @@ function checkCookie() {
   if (user != "") {
     swapStyleSheet("css/"+user+"_Theme.css")
   } else if (user == ""){
-     user = "Base";
+     user = "Twitter";
      if (user != "" && user != null) {
        console.log("loaded!")
        setCookie("theme", user, 24000000);
