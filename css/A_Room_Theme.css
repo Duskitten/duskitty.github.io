@@ -1,3 +1,14 @@
+:root {
+  --BannerURL:url("../images/A_RoomBanner.png");
+  --CharURL:url("../images/A_RoomChar.gif");
+  --BannerColor:#000;
+  --PrimaryBody: #0f0f0f;
+  --SecondaryHeader:#171717;
+  --TextMain: #4b644d;
+  --SecondaryInset: #000;
+}
+
+
 body {margin: 0; font-family: "Lato", sans-serif;
 image-rendering: optimizeSpeed;
     image-rendering: -moz-crisp-edges;
@@ -5,10 +16,10 @@ image-rendering: optimizeSpeed;
     image-rendering: optimize-contrast;
     image-rendering: pixelated;
     -ms-interpolation-mode: nearest-neighbor;
-  background-color: #0f0f0f;}
+  background-color: var(--PrimaryBody)}
 
 div.Banner{
-  background: #000;
+  background: var(--BannerColor);
 }
 
 img.TopBanner{
@@ -17,7 +28,7 @@ img.TopBanner{
 	display: block;
 	margin: auto auto;
 	float: none;
-  content: url("../images/A_RoomBanner.png");
+  content: var(--BannerURL);
 
 }
 
@@ -26,7 +37,63 @@ ul.topnav {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  margin-left:calc(50% - 275px);
+  margin-left:calc(50% - 205px);
+}
+div.Divider{
+  display: block;
+  position:relative;
+  overflow: hidden;
+  margin-top: 30px;
+  background-color: var(--SecondaryInset);
+}
+
+div.CoverHolder{
+  display: block;
+  position:relative;
+  overflow: hidden;
+  width:100%;
+  height:100px;
+  white-space: nowrap;
+}
+
+div.ImgContainer{
+  display: block;
+  position:relative;
+  overflow: visible;
+  width:10px;
+  height:110px;
+  float: left;
+}
+
+a.imghold{
+  float:none;
+
+}
+h1.title{
+  display: block;
+    white-space: nowrap;
+  margin-top:30px;
+  margin-left: 50%;
+  color:var(--TextMain);
+
+}
+div.TitleContainer{
+  width: 100%;
+  margin-left: -110px;
+}
+div.ArtTitleContainer{
+  width: 100%;
+  margin-left: -80px;
+}
+div.ImgBlock{
+  display: inline-block;
+  position:relative;
+  overflow: hidden;
+  margin-top:11px;
+  margin-left: 100px;
+  width:calc(100% - 210px);
+  height:110px;
+  background-color: var(--SecondaryInset);
 }
 
 img.Char{
@@ -37,11 +104,11 @@ img.Char{
   top:186px;
 	margin: auto auto;
 	float: none;
-  content: url("../images/A_RoomChar.gif");
+  content: var(--CharURL);
 }
 
 div.TopNavContainer {
-background-color: #171717;
+background-color: var(--SecondaryHeader);
 }
 
 
@@ -51,20 +118,29 @@ ul.topnav li {
 
 ul.topnav li a {
   display: block;
-  color: #4b644d;
+  color: var(--TextMain);
   font-weight:bold;
   text-align: center;
   padding: 15px 30px;
   text-decoration: none;
 }
 
-ul.topnav li a:hover:not(.active) {background-color: #000;}
+ul.topnav li a:hover:not(.active) {background-color: var(--BannerColor);}
 
-ul.topnav li a.active {background-color: #000;}
+ul.topnav li a.active {background-color:var(--BannerColor);}
 
 ul.topnav li.right {float: right;}
 
 
-@media screen and (max-width: 987px) {
-
+@media screen and (max-width: 600px) {
+  ul.topnav li {
+  	float: none;
+  }
+  ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    margin-left:0px;
+  }
 }

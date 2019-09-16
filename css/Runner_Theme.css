@@ -1,3 +1,14 @@
+:root {
+  --BannerURL:url("../images/RunnerBanner.png");
+  --CharURL:url("../images/RunnerChar.gif");
+  --BannerColor:#2b2e4a;
+  --PrimaryBody: #1f2029;
+  --SecondaryHeader:#272837;
+  --TextMain: #903749;
+  --SecondaryInset: #121317;
+}
+
+
 body {margin: 0; font-family: "Lato", sans-serif;
 image-rendering: optimizeSpeed;
     image-rendering: -moz-crisp-edges;
@@ -5,10 +16,10 @@ image-rendering: optimizeSpeed;
     image-rendering: optimize-contrast;
     image-rendering: pixelated;
     -ms-interpolation-mode: nearest-neighbor;
-  background-color: #1f2029;}
+  background-color: var(--PrimaryBody)}
 
 div.Banner{
-  background: #2b2e4a;
+  background: var(--BannerColor);
 }
 
 img.TopBanner{
@@ -17,19 +28,8 @@ img.TopBanner{
 	display: block;
 	margin: auto auto;
 	float: none;
-  content: url("../images/RunnerBanner.png");
+  content: var(--BannerURL);
 
-}
-
-img.Char{
-	overflow:hidden;
-  position: absolute;
-	display: block;
-  left:calc(50% - 120px);
-  top:188px;
-	margin: auto auto;
-	float: none;
-  content: url("../images/RunnerChar.gif");
 }
 
 ul.topnav {
@@ -37,11 +37,78 @@ ul.topnav {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  margin-left:calc(50% - 275px);
+  margin-left:calc(50% - 205px);
+}
+div.Divider{
+  display: block;
+  position:relative;
+  overflow: hidden;
+  margin-top: 30px;
+  background-color: var(--SecondaryInset);
+}
+
+div.CoverHolder{
+  display: block;
+  position:relative;
+  overflow: hidden;
+  width:100%;
+  height:100px;
+  white-space: nowrap;
+}
+
+div.ImgContainer{
+  display: block;
+  position:relative;
+  overflow: visible;
+  width:10px;
+  height:110px;
+  float: left;
+}
+
+a.imghold{
+  float:none;
+
+}
+h1.title{
+  display: block;
+    white-space: nowrap;
+  margin-top:30px;
+  margin-left: 50%;
+  color:var(--TextMain);
+
+}
+div.TitleContainer{
+  width: 100%;
+  margin-left: -110px;
+}
+div.ArtTitleContainer{
+  width: 100%;
+  margin-left: -80px;
+}
+div.ImgBlock{
+  display: inline-block;
+  position:relative;
+  overflow: hidden;
+  margin-top:11px;
+  margin-left: 100px;
+  width:calc(100% - 210px);
+  height:110px;
+  background-color: var(--SecondaryInset);
+}
+
+img.Char{
+	overflow:hidden;
+  position: absolute;
+	display: block;
+  left:calc(50% - 120px);
+  top:186px;
+	margin: auto auto;
+	float: none;
+  content: var(--CharURL);
 }
 
 div.TopNavContainer {
-background-color: #272837;
+background-color: var(--SecondaryHeader);
 }
 
 
@@ -51,20 +118,29 @@ ul.topnav li {
 
 ul.topnav li a {
   display: block;
-  color: #903749;
+  color: var(--TextMain);
   font-weight:bold;
   text-align: center;
   padding: 15px 30px;
   text-decoration: none;
 }
 
-ul.topnav li a:hover:not(.active) {background-color: #2b2e4a;}
+ul.topnav li a:hover:not(.active) {background-color: var(--BannerColor);}
 
-ul.topnav li a.active {background-color: #2b2e4a;}
+ul.topnav li a.active {background-color:var(--BannerColor);}
 
 ul.topnav li.right {float: right;}
 
 
-@media screen and (max-width: 987px) {
-
+@media screen and (max-width: 600px) {
+  ul.topnav li {
+  	float: none;
+  }
+  ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    margin-left:0px;
+  }
 }
