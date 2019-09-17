@@ -64,11 +64,6 @@ div.ImgContainer{
   height:110px;
   float: left;
 }
-
-a.imghold{
-  float:none;
-
-}
 h1.title{
   display: block;
     white-space: nowrap;
