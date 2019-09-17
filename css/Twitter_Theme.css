@@ -42,7 +42,7 @@ ul.topnav {
 div.Divider{
   display: block;
   position:relative;
-  overflow: hidden;
+  overflow: visible;
   margin-top: 30px;
   background-color: var(--SecondaryInset);
 }
@@ -50,19 +50,22 @@ div.Divider{
 div.CoverHolder{
   display: block;
   position:relative;
-  overflow: hidden;
+  overflow: visible;
   width:100%;
   height:100px;
   white-space: nowrap;
 }
 
 div.ImgContainer{
-  display: block;
-  position:relative;
-  overflow: visible;
-  width:10px;
+  display: inline-block;
   height:110px;
-  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a.ImgClick{
+  padding:0px 20px;
 }
 h1.title{
   display: block;
@@ -83,8 +86,7 @@ div.ArtTitleContainer{
 div.ImgBlock{
   display: inline-block;
   position:relative;
-  overflow: hidden;
-  margin-top:11px;
+  overflow: visible;
   margin-left: 100px;
   width:calc(100% - 210px);
   height:110px;
@@ -126,6 +128,25 @@ ul.topnav li a.active {background-color:var(--BannerColor);}
 
 ul.topnav li.right {float: right;}
 
+a.Img1{
+  display: inherit;
+}
+a.Img2{
+  display: inherit;
+}
+a.Img3{
+  display: inherit;
+}
+a.Img4{
+  display: inherit;
+}
+a.Img5{
+  display: inherit;
+}
+a.Img6{
+  display: inherit;
+}
+
 
 @media screen and (max-width: 600px) {
   ul.topnav li {
@@ -137,5 +158,31 @@ ul.topnav li.right {float: right;}
     padding: 0;
     overflow: hidden;
     margin-left:0px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  a.Img6{
+    display: none;
+  }
+}
+@media screen and (max-width: 1071px) {
+  a.Img5{
+    display: none;
+  }
+}
+@media screen and (max-width: 788px) {
+  a.Img4{
+    display: none;
+  }
+}
+@media screen and (max-width: 590px) {
+  a.Img3{
+    display: none;
+  }
+}
+@media screen and (max-width: 386px) {
+  a.Img2{
+    display: none;
   }
 }
