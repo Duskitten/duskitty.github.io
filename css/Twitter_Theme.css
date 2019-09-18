@@ -32,6 +32,18 @@ img.TopBanner{
 
 }
 
+div.ThemesHolder{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img.InsetImageTheme{
+	display: block;
+  width: 125px;
+  padding:0px 20px;
+}
+
 ul.topnav {
   list-style-type: none;
   margin: 0;
