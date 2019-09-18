@@ -93,6 +93,41 @@ div.ImgBlock{
   background-color: var(--SecondaryInset);
 }
 
+div.PageBackpane{
+  display: inline-block;
+  position:relative;
+  overflow: visible;
+  margin-left: calc(50% - 330px);
+  width:660px;
+  height:calc(100% - 210px);
+  background-color: var(--SecondaryInset);
+}
+
+h1.PageText{
+  margin-left: calc(50% - 320px);
+  background-color:
+  margin-top:20px;
+  color:var(--TextMain);
+}
+
+a.gamedesc{
+  padding: 50px auto;
+  color:var(--TextMain);
+}
+
+div.gamedescBox{
+  margin: 10px 50px;
+  height: 140px;
+  background-color: var(--SecondaryHeader);
+}
+div.InnergamedescBox{
+  display: inline-block;
+  margin: 10px 10px;
+  height: 130px;
+  width: 540px;
+  background-color: var(--SecondaryHeader);
+}
+
 img.Char{
 	overflow:hidden;
   position: absolute;
