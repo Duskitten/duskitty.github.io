@@ -22,14 +22,23 @@ div.Banner{
   background: var(--BannerColor);
 }
 
-img.TopBanner img.TopBanner::after{
+img.TopBanner{
 	overflow:hidden;
 	position: relative;
 	display: block;
 	margin: auto auto;
 	float: none;
   content: var(--BannerURL);
+}
 
+
+img.TopBanner:after{
+  overflow:hidden;
+	position: relative;
+	display: block;
+	margin: auto auto;
+	float: none;
+  content: var(--BannerURL);
 }
 
 div.ThemesHolder{
