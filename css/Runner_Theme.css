@@ -8,7 +8,6 @@
   --SecondaryInset: #121317;
 }
 
-
 body {margin: 0; font-family: "Lato", sans-serif;
 image-rendering: optimizeSpeed;
     image-rendering: -moz-crisp-edges;
@@ -33,7 +32,6 @@ img.TopBanner{
   background-image: var(--BannerURL);
   background-repeat: no-repeat;
   background-position-x: center;
-
 }
 
 div.ThemesHolder{
@@ -53,7 +51,7 @@ ul.topnav {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  margin-left:calc(50% - 205px);
+  margin-left:calc(50% - 320px);
 }
 div.Divider{
   display: block;
@@ -145,7 +143,7 @@ div.InnergamedescBox{
 }
 
 img.Char{
-  overflow:hidden;
+	overflow:hidden;
   position: absolute;
 	display: block;
   left:calc(50% - 120px);
@@ -204,7 +202,7 @@ a.Img6{
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   ul.topnav li {
   	float: none;
   }

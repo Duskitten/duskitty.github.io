@@ -52,7 +52,7 @@ ul.topnav {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  margin-left:calc(50% - 205px);
+  margin-left:calc(50% - 320px);
 }
 div.Divider{
   display: block;
@@ -203,7 +203,7 @@ a.Img6{
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   ul.topnav li {
   	float: none;
   }
