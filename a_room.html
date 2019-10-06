@@ -47,5 +47,9 @@
 </div>
   </p>
 	<script type="text/javascript" src="js/testscript1.js"></script>
+	<script type="text/javascript" >var canvas = document.createElement("canvas");
+if(!canvas.getContext("webgl") && !canvas.getContext("experimental-webgl")) {
+    document.getElementById("Loader").src = "images/error.gif";
+}</script>
 </body>
 </html>
