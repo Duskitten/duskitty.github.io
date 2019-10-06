@@ -22,7 +22,7 @@ div.Banner{
   background: var(--BannerColor);
 }
 
-img.TopBanner, img.TopBanner::after{
+img.TopBanner img.TopBanner:after{
 	overflow:hidden;
 	position: relative;
 	display: block;
