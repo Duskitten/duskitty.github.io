@@ -16,7 +16,9 @@ image-rendering: optimizeSpeed;
     image-rendering: optimize-contrast;
     image-rendering: pixelated;
     -ms-interpolation-mode: nearest-neighbor;
-  background-color: var(--PrimaryBody)}
+  height: 1227px;
+  background-color: var(--PrimaryBody)
+}
 
 div.Banner{
   background: var(--BannerColor);
@@ -114,7 +116,7 @@ div.PageBackpane{
   overflow: visible;
   margin-left: calc(50% - 330px);
   width:660px;
-  height:calc(100% - 210px);
+  height:800px;
   background-color: var(--SecondaryInset);
 }
 
@@ -130,11 +132,24 @@ a.gamedesc{
   color:var(--TextMain);
 }
 
+p.gamedesc{
+  padding: 50px -30px;
+  color:var(--TextMain);
+}
+
 div.gamedescBox{
   margin: 10px 50px;
   height: 140px;
   background-color: var(--SecondaryHeader);
 }
+
+
+div.aboutdescBox{
+  margin: 10px 50px;
+  height: 735px;
+  background-color: var(--SecondaryHeader);
+}
+
 div.InnergamedescBox{
   display: inline-block;
   margin: 10px 10px;
